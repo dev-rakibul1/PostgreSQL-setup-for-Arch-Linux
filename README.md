@@ -116,3 +116,7 @@ ALTER USER gql CREATEDB;
 | Database delete            | `DROP DATABASE db_2;`                             |
 | Password replace/remove    | `ALTER USER user_2 WITH PASSWORD 'newpass/null';` |
 </pre>
+
+## Note:
+
+<p>PostgreSQL ডাটাবেজ নামগুলো case-sensitive নয়, কিন্তু যদি ডাটাবেজ নাম বড় হাতের অক্ষরে বা স্পেশাল ক্যারেক্টার থাকে তাহলে সেগুলোকে ডাবল কোটস ("") এর মধ্যে রাখতে হয়।</p>
