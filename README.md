@@ -106,3 +106,13 @@ ALTER USER gql CREATEDB;
 ## For remove permissions: only wrie 'NO' like:
 
 `ALTER USER user_2 WITH NOSUPERUSER NOCREATEROLE NOCREATEDB NOREPLICATION NOBYPASSRLS;`
+
+## Delete user, database and password
+
+<pre>
+| Work                       | Command                                           |
+| -------------------------- | --------------------------------------------      | 
+| User delete                | `DROP USER user_2;`                               |
+| Database delete            | `DROP DATABASE db_2;`                             |
+| Password replace/remove    | `ALTER USER user_2 WITH PASSWORD 'newpass/null';` |
+</pre>
