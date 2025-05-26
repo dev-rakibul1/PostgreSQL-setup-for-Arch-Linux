@@ -22,6 +22,7 @@ GRANT ALL PRIVILEGES ON DATABASE <Database name> TO <your user name>;
 ## After installation:
 
 <p> // for postgresql login command</p>
+
 `sudo -u postgres psql`
 
 ## Create a new URI on terminal:
