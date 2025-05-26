@@ -74,3 +74,17 @@ ALTER USER gql CREATEDB;
 ## After migration prisma
 
 `npx prisma migrate dev --name init`
+
+# If you are logged in as a superuser (for example, postgres or rakibul), you can reset the password for the gql user like this:
+
+`ALTER USER gql WITH PASSWORD 'new_password_here';`
+
+<p>Replace 'new_password_here' with the new password you want to set.</p>
+
+## Important:
+
+    - You cannot view the existing password because PostgreSQL stores passwords in a secure hashed form.
+    - You can only reset the password by setting a new one.
+    - To check which users are superusers, use the \du command in psql.
+    - Superusers have attributes like:
+        - Superuser, Create role, Create DB etc.
