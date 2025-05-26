@@ -33,7 +33,9 @@ GRANT ALL PRIVILEGES ON DATABASE <Database name> TO <your user name>;
 CREATE USER myuser WITH PASSWORD 'mypassword';
 CREATE DATABASE mydb OWNER myuser;
 GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
-postgresql://<username>:<password>@<host>:<port>/<database>
+
+<p>PostgreSQL Connection URI:</p> 
+postgresql://myuser:mypassword@localhost:5432/mydb
 
 </code>
 </pre>
