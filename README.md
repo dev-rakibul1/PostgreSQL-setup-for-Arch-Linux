@@ -1,6 +1,6 @@
 # PostgreSQL setup for Arch Linux
 
-## Install postgreSQL
+## Install PostgreSQL
 
 `sudo pacman -S postgresql`
 
@@ -13,10 +13,10 @@
 
 ## Create database user and password
 
-<pre><code>```
+<pre><code>
 CREATE DATABASE <Database name>;
 CREATE USER <your user name> WITH PASSWORD '<your password>';
-GRANT ALL PRIVILEGES ON DATABASE <Database name> TO <your user name>;```
+GRANT ALL PRIVILEGES ON DATABASE <Database name> TO <your user name>;
 </code></pre>
 
 ## After installation:
@@ -28,12 +28,12 @@ GRANT ALL PRIVILEGES ON DATABASE <Database name> TO <your user name>;```
 
 <pre>
 <code>
-```
+
 CREATE USER myuser WITH PASSWORD 'mypassword';
 CREATE DATABASE mydb OWNER myuser;
 GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 postgresql://<username>:<password>@<host>:<port>/<database>
-```
+
 </code>
 </pre>
 
@@ -41,13 +41,13 @@ postgresql://<username>:<password>@<host>:<port>/<database>
 
 <pre>
 <code>
-```
+
 CREATE USER gql WITH PASSWORD 'gqlpass';
 CREATE DATABASE gqldb OWNER gql;
 GRANT ALL PRIVILEGES ON DATABASE gqldb TO gql;
 
 ALTER USER gql CREATEDB;
-```
+
 </code>
 </pre>
 
