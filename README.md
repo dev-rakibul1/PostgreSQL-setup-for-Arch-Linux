@@ -70,6 +70,8 @@ ALTER USER gql CREATEDB;
 - check database relations: \dt
 - Query All Users: SELECT \* FROM "users";
 - Get all user: \du
+- Single user check: \du user_2
+- Access privileges: \z
 
 ## After migration prisma
 
@@ -89,6 +91,10 @@ ALTER USER gql CREATEDB;
     - Superusers have attributes like:
         - Superuser, Create role, Create DB etc.
 
-## To replace to user name and must have supperuser perminsions
+## To replace to user name and must have supperuser permissions
 
 `ALTER ROLE db_2 RENAME TO user_2;`
+
+## Database user permission role
+
+`ALTER USER user_2 WITH SUPERUSER;`
