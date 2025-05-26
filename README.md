@@ -98,3 +98,7 @@ ALTER USER gql CREATEDB;
 ## Database user permission role
 
 `ALTER USER user_2 WITH SUPERUSER;`
+
+<p>For all permissions commands:</p>
+
+`ALTER USER user_2 WITH SUPERUSER CREATEROLE CREATEDB REPLICATION BYPASSRLS;`
